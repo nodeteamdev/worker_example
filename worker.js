@@ -14,11 +14,7 @@ function runService(workerData) {
 }
 
 async function run() {
-    try {
-        await runService('world');
-    } catch(error) {
-        console.error('runService error', error);
-    }
+    await runService('world');
 }
 
 module.exports = {

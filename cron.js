@@ -1,7 +1,6 @@
 const CronJob = require('cron').CronJob;
 const worker = require('./worker');
 
-
 const job = new CronJob('*/20 * * * * *', function() {
 
     worker.start();
